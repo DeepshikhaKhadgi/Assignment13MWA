@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  ComponentCounterValue = 10;
+
+  counterChangeMethod($event){
+    this.ComponentCounterValue = $event;
+  }
 }
